@@ -1,7 +1,8 @@
 # Mobile Development – React Native & Expo
 
-Ein Codespace für das ganze Repository. Startup-App und Expo-Beispiele
-liegen nebeneinander. Es läuft immer nur eine Expo-App.
+Ein Codespace für das ganze Repository. Die Übungs-Apps liegen unter
+`Beispiele`, die Lösungen im eigenen Ordner `Lösungen`. Es läuft immer nur
+eine Expo-App.
 
 Die Befehle unten gelten im **Repo-Root** (dort öffnet der Codespace).
 
@@ -33,8 +34,12 @@ https://github.com/codespaces öffnen. Keinen zweiten Space anlegen.
 ## Ordner
 
 - `Beispiele/Startup-App` – erste App
-- `Beispiele/Expo-Beispiele` – JavaScript-Themen als React Native
+- `Beispiele/JavaScript` – JavaScript-Themen als React Native
+- `Beispiele/UI-Komponenten` – Tagebuch MyJournal aus Kapitel 4
+- `Lösungen/JavaScript` – Lösungen zu `Javascript/Lösungen`
+- `Lösungen/UI-Komponenten` – gelöste Aufgaben zu MyJournal
 - `Javascript/Beispiele` – dieselben Themen im Browser
+- `Javascript/Lösungen` – Web-Lösungen zu den Übungen
 
 ## Erste Änderung
 
@@ -48,11 +53,14 @@ Die App aktualisiert sich automatisch auf dem Handy.
 Immer nur eine Expo-App gleichzeitig. Die laufende im Terminal mit
 `Ctrl+C` beenden, danach die andere starten.
 
-- `F1` → **Tasks: Run Task** → **Expo-Beispiele starten**
+- `F1` → **Tasks: Run Task** → **JavaScript starten**, **UI-Komponenten starten**, **JavaScript-Lösung starten** oder **UI-Komponenten-Lösung starten**
 - Oder im Repo-Root:
 
 ```bash
-npm run start:beispiele
+npm run start:javascript
+npm run start:ui
+npm run start:javascript-loesung
+npm run start:ui-loesung
 ```
 
 Zurück zur Startup-App:

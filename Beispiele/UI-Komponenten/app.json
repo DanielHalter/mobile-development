@@ -1,16 +1,17 @@
 {
   "expo": {
-    "name": "Expo-Beispiele",
-    "slug": "Expo-Beispiele",
+    "name": "MyJournal",
+    "slug": "UI-Komponenten",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "scheme": "expobeispiele",
+    "scheme": "uikomponenten",
     "userInterfaceStyle": "automatic",
     "ios": {
       "supportsTablet": true
     },
     "android": {
+      "softwareKeyboardLayoutMode": "resize",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",

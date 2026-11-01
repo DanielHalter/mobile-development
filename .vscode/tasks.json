@@ -21,11 +21,68 @@
       }
     },
     {
-      "label": "Expo-Beispiele starten",
+      "label": "JavaScript starten",
       "type": "shell",
       "command": "npm start",
       "options": {
-        "cwd": "${workspaceFolder}/Beispiele/Expo-Beispiele"
+        "cwd": "${workspaceFolder}/Beispiele/JavaScript"
+      },
+      "isBackground": true,
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      },
+      "presentation": {
+        "reveal": "always",
+        "focus": true,
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "UI-Komponenten starten",
+      "type": "shell",
+      "command": "npm start",
+      "options": {
+        "cwd": "${workspaceFolder}/Beispiele/UI-Komponenten"
+      },
+      "isBackground": true,
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      },
+      "presentation": {
+        "reveal": "always",
+        "focus": true,
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "JavaScript-Lösung starten",
+      "type": "shell",
+      "command": "npm start",
+      "options": {
+        "cwd": "${workspaceFolder}/Lösungen/JavaScript"
+      },
+      "isBackground": true,
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      },
+      "presentation": {
+        "reveal": "always",
+        "focus": true,
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "UI-Komponenten-Lösung starten",
+      "type": "shell",
+      "command": "npm start",
+      "options": {
+        "cwd": "${workspaceFolder}/Lösungen/UI-Komponenten"
       },
       "isBackground": true,
       "problemMatcher": [],

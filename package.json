@@ -4,6 +4,9 @@
   "scripts": {
     "start": "npm start --prefix Beispiele/Startup-App",
     "start:startup": "npm start --prefix Beispiele/Startup-App",
-    "start:beispiele": "npm start --prefix Beispiele/Expo-Beispiele"
+    "start:javascript": "npm start --prefix Beispiele/JavaScript",
+    "start:ui": "npm start --prefix Beispiele/UI-Komponenten",
+    "start:javascript-loesung": "npm start --prefix Lösungen/JavaScript",
+    "start:ui-loesung": "npm start --prefix Lösungen/UI-Komponenten"
   }
 }

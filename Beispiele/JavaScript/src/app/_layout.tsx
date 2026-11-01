@@ -10,7 +10,7 @@ export default function RootLayout() {
           headerBackButtonDisplayMode: 'minimal',
           headerShadowVisible: false,
         }}>
-        <Stack.Screen name="index" options={{ title: 'Expo-Beispiele', headerLargeTitleEnabled: true }} />
+        <Stack.Screen name="index" options={{ title: 'JavaScript', headerLargeTitleEnabled: true }} />
       </Stack>
     </>
   );
