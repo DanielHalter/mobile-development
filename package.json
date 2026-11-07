@@ -5,8 +5,11 @@
     "start": "npm start --prefix Beispiele/Startup-App",
     "start:startup": "npm start --prefix Beispiele/Startup-App",
     "start:javascript": "npm start --prefix Beispiele/JavaScript",
-    "start:ui": "npm start --prefix Beispiele/UI-Komponenten",
+    "start:ui": "npm start --prefix Beispiele/UI-Komponenten/MyJournal",
+    "start:myjournal": "npm start --prefix Beispiele/Styling/MyJournal",
+    "start:layout": "npm start --prefix Beispiele/Styling/Layout",
     "start:javascript-loesung": "npm start --prefix Lösungen/JavaScript",
-    "start:ui-loesung": "npm start --prefix Lösungen/UI-Komponenten"
+    "start:ui-loesung": "npm start --prefix Lösungen/UI-Komponenten",
+    "start:styling-loesung": "npm start --prefix Lösungen/Styling"
   }
 }

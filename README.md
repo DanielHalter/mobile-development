@@ -33,13 +33,34 @@ https://github.com/codespaces öffnen. Keinen zweiten Space anlegen.
 
 ## Ordner
 
-- `Beispiele/Startup-App` – erste App
-- `Beispiele/JavaScript` – JavaScript-Themen als React Native
-- `Beispiele/UI-Komponenten` – Tagebuch MyJournal aus Kapitel 4
-- `Lösungen/JavaScript` – Lösungen zu `Javascript/Lösungen`
-- `Lösungen/UI-Komponenten` – gelöste Aufgaben zu MyJournal
-- `Javascript/Beispiele` – dieselben Themen im Browser
-- `Javascript/Lösungen` – Web-Lösungen zu den Übungen
+`Beispiele` enthält die Apps für den Unterricht. `Lösungen` liegt daneben
+und enthält die gelösten Aufgaben. `Javascript` sind dieselben Themen im
+Browser.
+
+```
+Beispiele/
+  Startup-App/                 erste App
+  JavaScript/                  JavaScript-Themen als React Native
+  UI-Komponenten/
+    MyJournal/                 Tagebuch aus Kapitel 4, ohne Gestaltung
+  Styling/
+    MyJournal/                 gelöstes Tagebuch mit dem Styling aus Kapitel 5
+    Layout/                    Beispiele 5-1 bis 5-5
+Lösungen/
+  JavaScript/                  Lösungen zu Javascript/Lösungen
+  UI-Komponenten/              gelöste Aufgaben zum Tagebuch
+  Styling/                     dasselbe Tagebuch mit klarerer Gestaltung
+Javascript/
+  Beispiele/                   dieselben Themen im Browser
+  Lösungen/                    Web-Lösungen zu den Übungen
+```
+
+`UI-Komponenten/MyJournal` ist der Durchgang aus Kapitel 4, ohne die
+gelösten Aufgaben und ohne Gestaltung. `Styling/MyJournal` ist die gelöste
+App aus `Lösungen/UI-Komponenten` mit den Styles aus Kapitel 5, Beispiele
+5-6 bis 5-14. `Styling/Layout` sind die Beispiele 5-1 bis 5-5 mit Rechtecken
+und Flexbox. `Lösungen/Styling` ist dieselbe App mit klarerer Hierarchie,
+gruppierter Eingabe, Abständen, lesbarem Eintragstext und umbrechenden Zeilen.
 
 ## Erste Änderung
 
@@ -53,15 +74,22 @@ Die App aktualisiert sich automatisch auf dem Handy.
 Immer nur eine Expo-App gleichzeitig. Die laufende im Terminal mit
 `Ctrl+C` beenden, danach die andere starten.
 
-- `F1` → **Tasks: Run Task** → **JavaScript starten**, **UI-Komponenten starten**, **JavaScript-Lösung starten** oder **UI-Komponenten-Lösung starten**
-- Oder im Repo-Root:
+- `F1` → **Tasks: Run Task**, oder im Repo-Root:
 
 ```bash
-npm run start:javascript
-npm run start:ui
-npm run start:javascript-loesung
-npm run start:ui-loesung
+npm run start:javascript          # Beispiele/JavaScript
+npm run start:ui                  # UI-Komponenten/MyJournal
+npm run start:myjournal           # Styling/MyJournal
+npm run start:layout              # Styling/Layout, Beispiele 5-1 bis 5-5
+npm run start:javascript-loesung  # Lösungen/JavaScript
+npm run start:ui-loesung          # Lösungen/UI-Komponenten
+npm run start:styling-loesung     # Lösungen/Styling
 ```
+
+Die Tasks heissen **JavaScript starten**, **UI-Komponenten starten**,
+**Styling MyJournal starten**, **Layout starten**,
+**JavaScript-Lösung starten**, **UI-Komponenten-Lösung starten** und
+**Styling-Lösung starten**.
 
 Zurück zur Startup-App:
 

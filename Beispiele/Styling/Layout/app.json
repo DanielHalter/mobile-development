@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "MyJournal",
-    "slug": "UI-Komponenten",
+    "name": "Layout",
+    "slug": "Layout",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "scheme": "uikomponenten",
+    "scheme": "layout",
     "userInterfaceStyle": "automatic",
     "ios": {
       "supportsTablet": true

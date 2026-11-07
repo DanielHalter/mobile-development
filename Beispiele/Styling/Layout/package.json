@@ -1,5 +1,5 @@
 {
-  "name": "ui-komponenten",
+  "name": "layout",
   "version": "1.0.0",
   "main": "expo-router/entry",
   "dependencies": {
@@ -22,7 +22,7 @@
     "typescript": "~6.0.3"
   },
   "scripts": {
-    "start": "node ../../scripts/start-expo.js",
+    "start": "node ../../../scripts/start-expo.js",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web"
