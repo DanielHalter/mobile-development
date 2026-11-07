@@ -44,7 +44,45 @@
       "type": "shell",
       "command": "npm start",
       "options": {
-        "cwd": "${workspaceFolder}/Beispiele/UI-Komponenten"
+        "cwd": "${workspaceFolder}/Beispiele/UI-Komponenten/MyJournal"
+      },
+      "isBackground": true,
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      },
+      "presentation": {
+        "reveal": "always",
+        "focus": true,
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Styling MyJournal starten",
+      "type": "shell",
+      "command": "npm start",
+      "options": {
+        "cwd": "${workspaceFolder}/Beispiele/Styling/MyJournal"
+      },
+      "isBackground": true,
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      },
+      "presentation": {
+        "reveal": "always",
+        "focus": true,
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Layout starten",
+      "type": "shell",
+      "command": "npm start",
+      "options": {
+        "cwd": "${workspaceFolder}/Beispiele/Styling/Layout"
       },
       "isBackground": true,
       "problemMatcher": [],
@@ -83,6 +121,25 @@
       "command": "npm start",
       "options": {
         "cwd": "${workspaceFolder}/Lösungen/UI-Komponenten"
+      },
+      "isBackground": true,
+      "problemMatcher": [],
+      "runOptions": {
+        "instanceLimit": 1
+      },
+      "presentation": {
+        "reveal": "always",
+        "focus": true,
+        "panel": "dedicated",
+        "clear": true
+      }
+    },
+    {
+      "label": "Styling-Lösung starten",
+      "type": "shell",
+      "command": "npm start",
+      "options": {
+        "cwd": "${workspaceFolder}/Lösungen/Styling"
       },
       "isBackground": true,
       "problemMatcher": [],
