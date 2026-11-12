@@ -41,3 +41,5 @@ example
 # generated native folders
 /ios
 /android
+Beispiele/UI-Komponenten/package-lock.json
+Beispiele/UI-Komponenten/package.json
