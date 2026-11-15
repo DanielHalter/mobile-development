@@ -11,6 +11,7 @@
     "start:fotos": "npm start --prefix Beispiele/Fotos/MyJournal",
     "start:javascript-loesung": "npm start --prefix Lösungen/JavaScript",
     "start:ui-loesung": "npm start --prefix Lösungen/UI-Komponenten",
-    "start:styling-loesung": "npm start --prefix Lösungen/Styling"
+    "start:styling-loesung": "npm start --prefix Lösungen/Styling",
+    "start:fotos-loesung": "npm start --prefix Lösungen/Fotos"
   }
 }

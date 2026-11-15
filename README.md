@@ -52,6 +52,7 @@ Lösungen/
   JavaScript/                  Lösungen zu Javascript/Lösungen
   UI-Komponenten/              gelöste Aufgaben zum Tagebuch
   Styling/                     dasselbe Tagebuch mit klarerer Gestaltung
+  Fotos/                       Foto-App, Entwurf wird beim Tippen daneben geleert
 Javascript/
   Beispiele/                   dieselben Themen im Browser
   Lösungen/                    Web-Lösungen zu den Übungen
@@ -65,6 +66,8 @@ und Flexbox. `Fotos/MyJournal` nimmt `Lösungen/Styling` als Vorlage und ergänz
 sie um die Beispiele aus Kapitel 6: Uhrzeit, mehrzeiliger Text und Foto per Kamera.
 `Lösungen/Styling` ist dieselbe App mit klarerer Hierarchie,
 gruppierter Eingabe, Abständen, lesbarem Eintragstext und umbrechenden Zeilen.
+`Lösungen/Fotos` ist die Foto-App, bei der Text und Fotovorschau
+verschwinden, wenn man neben die Eingabe tippt.
 
 ## Erste Änderung
 
@@ -89,12 +92,13 @@ npm run start:fotos               # Fotos/MyJournal, Kapitel 6
 npm run start:javascript-loesung  # Lösungen/JavaScript
 npm run start:ui-loesung          # Lösungen/UI-Komponenten
 npm run start:styling-loesung     # Lösungen/Styling
+npm run start:fotos-loesung       # Lösungen/Fotos
 ```
 
 Die Tasks heissen **JavaScript starten**, **UI-Komponenten starten**,
 **Styling MyJournal starten**, **Layout starten**, **Fotos starten**,
-**JavaScript-Lösung starten**, **UI-Komponenten-Lösung starten** und
-**Styling-Lösung starten**.
+**JavaScript-Lösung starten**, **UI-Komponenten-Lösung starten**,
+**Styling-Lösung starten** und **Fotos-Lösung starten**.
 
 Zurück zur Startup-App:
 
