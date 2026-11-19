@@ -75,10 +75,13 @@ const styles = StyleSheet.create({
     flex: 1,
     marginTop: 24,
   },
-  listHeader: {
-    color: 'gray',
-    backgroundColor: 'lightcyan',
-    textAlign: 'center',
+  listHeader: { 
+    color: '#333', 
+    fontWeight: '700', 
+    fontSize: 16, 
+    paddingVertical: 8, 
+    backgroundColor: 'lightcyan', 
+    textAlign: 'center' 
   },
   listSeparator: {
     height: StyleSheet.hairlineWidth,

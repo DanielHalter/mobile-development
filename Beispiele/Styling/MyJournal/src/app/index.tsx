@@ -95,16 +95,28 @@ export default function MyJournalScreen() {
         onToggleFavorite={handleToggleFavorite}
       />
       {selected ? <Text style={styles.selected}>Ausgewählt: {selected}</Text> : null}
+      {/* Nähe: Vorschau, Eingabe und Button in EINEM Rahmen (Card) */}
       <View style={[styles.composer, { marginBottom: Math.max(insets.bottom, 12) }]}>
+        <Text style={styles.preview} numberOfLines={1}>
+          {draft || 'Noch kein Text'}
+        </Text>
         <TextInput
           ref={inputRef}
           style={styles.input}
           placeholder="Tagebucheintrag erstellen"
+          placeholderTextColor="#666"
           returnKeyType="done"
+          underlineColorAndroid="transparent"
           onChangeText={setDraft}
           onSubmitEditing={(event) => addItem(event.nativeEvent.text)}
         />
-        <Button title="Hinzufügen" onPress={() => addItem(draft)} />
+        {/* RN-<Button> ist nicht stylebar → Pressable für volle Breite + Radius */}
+        <Pressable
+          accessibilityRole="button"
+          onPress={() => addItem(draft)}
+          style={({ pressed }) => [styles.addButton, pressed && styles.addButtonPressed]}>
+          <Text style={styles.addButtonLabel}>Eintrag hinzufügen</Text>
+        </Pressable>
       </View>
     </KeyboardAvoidingView>
   );
@@ -164,11 +176,36 @@ const styles = StyleSheet.create({
     color: 'gray',
   },
   composer: {
-    margin: 12,
+    marginHorizontal: 12,
+    marginTop: 8,
+    padding: 12,
+    gap: 8,
+    borderWidth: 1,
+    borderColor: 'deepskyblue',
+    borderRadius: 8,
+  },
+  preview: {
+    fontSize: 12,
+    color: 'gray',
   },
   input: {
     height: 40,
     paddingHorizontal: 8,
+    fontSize: 16,
+  },
+  addButton: {
+    backgroundColor: 'deepskyblue',
+    borderRadius: 8,
+    paddingVertical: 12,
+    alignItems: 'center',
+  },
+  addButtonPressed: {
+    opacity: 0.7,
+  },
+  addButtonLabel: {
+    color: 'white',
+    fontSize: 16,
+    fontWeight: '600',
   },
   selected: {
     paddingHorizontal: 12,

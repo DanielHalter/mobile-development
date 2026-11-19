@@ -15,7 +15,7 @@ export function JournalItemRow({ item, onPress, onToggleFavorite }: JournalItemR
         android_ripple={{ color: 'rgba(0, 0, 0, 0.12)' }}
         onPress={() => onPress(item)}
         style={({ pressed }) => [styles.textArea, pressed && styles.pressed]}>
-        <Text>{item.text}</Text>
+        <Text style={styles.entryText} numberOfLines={2}>{item.text}</Text>
       </Pressable>
       <Pressable
         hitSlop={8}
@@ -39,6 +39,11 @@ const styles = StyleSheet.create({
   textArea: {
     flex: 1,
     padding: 12,
+  },
+  entryText: {
+    fontSize: 16,
+    lineHeight: 22,
+    color: '#333',
   },
   starButton: {
     paddingHorizontal: 12,
