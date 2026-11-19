@@ -1,24 +1,30 @@
-import { FlatList, Pressable, SectionList, StyleSheet, Text } from 'react-native';
+import { FlatList, SectionList, StyleSheet, Text } from 'react-native';
 
+import { JournalItemRow } from '@/components/journal-item-row';
 import { type JournalEntry, type JournalSection } from '@/utils/journal';
 
 type JournalItemsProps = {
   items: JournalSection[];
   grouped: boolean;
+  emptyText: string;
   onPressItem: (item: JournalEntry) => void;
+  onToggleFavorite: (item: JournalEntry) => void;
 };
 
-export function JournalItems({ items, grouped, onPressItem }: JournalItemsProps) {
+export function JournalItems({
+  items,
+  grouped,
+  emptyText,
+  onPressItem,
+  onToggleFavorite,
+}: JournalItemsProps) {
   function renderItem({ item }: { item: JournalEntry }) {
     return (
-      <Pressable
-        android_ripple={{ color: 'rgba(0, 0, 0, 0.12)' }}
-        onPress={() => onPressItem(item)}
-        style={({ pressed }) => [styles.row, pressed && styles.pressed]}>
-        <Text>{item.text}</Text>
-      </Pressable>
+      <JournalItemRow item={item} onPress={onPressItem} onToggleFavorite={onToggleFavorite} />
     );
   }
+
+  const emptyComponent = <Text style={styles.empty}>{emptyText}</Text>;
 
   if (!grouped) {
     return (
@@ -28,7 +34,7 @@ export function JournalItems({ items, grouped, onPressItem }: JournalItemsProps)
         keyboardShouldPersistTaps="handled"
         data={items.flatMap((section) => section.data)}
         keyExtractor={(item) => String(item.date)}
-        ListEmptyComponent={<Text style={styles.empty}>Keine Einträge im Tagebuch</Text>}
+        ListEmptyComponent={emptyComponent}
         renderItem={renderItem}
       />
     );
@@ -41,7 +47,7 @@ export function JournalItems({ items, grouped, onPressItem }: JournalItemsProps)
       keyboardShouldPersistTaps="handled"
       sections={items}
       keyExtractor={(item) => String(item.date)}
-      ListEmptyComponent={<Text style={styles.empty}>Keine Einträge im Tagebuch</Text>}
+      ListEmptyComponent={emptyComponent}
       renderSectionHeader={({ section }) => <Text style={styles.sectionHeader}>{section.title}</Text>}
       renderItem={renderItem}
     />
@@ -58,11 +64,5 @@ const styles = StyleSheet.create({
   sectionHeader: {
     backgroundColor: 'darkgray',
     padding: 8,
-  },
-  row: {
-    padding: 12,
-  },
-  pressed: {
-    opacity: 0.6,
   },
 });

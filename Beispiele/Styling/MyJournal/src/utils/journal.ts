@@ -50,3 +50,14 @@ export function favoriteSections(sections: JournalSection[]): JournalSection[] {
     }))
     .filter((section) => section.data.length > 0);
 }
+
+export function countEntries(sections: JournalSection[]): number {
+  return sections.reduce((sum, section) => sum + section.data.length, 0);
+}
+
+export function countFavorites(sections: JournalSection[]): number {
+  return sections.reduce(
+    (sum, section) => sum + section.data.filter((item) => item.isFavorite).length,
+    0,
+  );
+}
