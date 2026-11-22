@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "Gerät",
+    "slug": "geraet",
+    "version": "1.2.0",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "scheme": "geraet",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "buildNumber": "7"
+    },
+    "android": {
+      "versionCode": 7,
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Die Demo liest den aktuellen Ort nur, wenn du das Wetter zum Eintrag hinzufügst."
+        }
+      ],
+      [
+        "expo-sensors",
+        {
+          "motionPermission": "Die Demo zeigt die Messwerte, während du das Gerät drehst."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
